@@ -23,7 +23,14 @@ public class Ggg extends HttpServlet {
     protected void doGet(HttpServletRequest rq, HttpServletResponse rs) throws ServletException, IOException {
         rs.getWriter().println("Querry string: " + rq.getQueryString());
         rs.getWriter().println("GET Ggg:" + rq.getMethod());
-        // rs.getWriter().println("Forward part started (4th task):");
+        rs.getWriter().println("Forward part started (4th task):");
+
+        //for 4th task
+        RequestDispatcher rd = rq.getRequestDispatcher("/forwarded.html");
+        rd.forward(rq, rs);
+        //for 4th task
+
+        // rs.sendRedirect("/lab3/forwarded.html");
 
         System.out.println("Ggg:doGet:" + rq.getMethod());
     }
