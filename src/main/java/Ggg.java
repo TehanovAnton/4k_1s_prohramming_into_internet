@@ -23,8 +23,9 @@ public class Ggg extends HttpServlet {
     protected void doGet(HttpServletRequest rq, HttpServletResponse rs) throws ServletException, IOException {
         rs.getWriter().println("Querry string: " + rq.getQueryString());
         rs.getWriter().println("GET Ggg:" + rq.getMethod());
+        rs.getWriter().println("forwraded part for task 6 4-5");
 
-        System.out.println("Ggg:doGet:" + rq.getMethod());
+        rs.sendRedirect("/lab3/forwarded.html");
     }
 
     @Override
