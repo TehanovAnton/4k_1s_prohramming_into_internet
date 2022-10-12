@@ -1,6 +1,5 @@
 import java.io.IOException;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -21,11 +20,9 @@ public class Ggg extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest rq, HttpServletResponse rs) throws ServletException, IOException {
-        rs.getWriter().println("Querry string: " + rq.getQueryString());
-        rs.getWriter().println("GET Ggg:" + rq.getMethod());
-        rs.getWriter().println("forwraded part for task 6 4-5");
+        rs.getWriter().println("Params: a:" + rq.getParameter("a") + "; b:" + rq.getParameter("b"));
 
-        rs.sendRedirect("/lab3/forwarded.html");
+        System.out.println("Ggg:doGet:" + rq.getMethod());
     }
 
     @Override

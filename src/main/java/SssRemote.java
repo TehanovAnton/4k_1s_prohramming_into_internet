@@ -21,7 +21,7 @@ public class SssRemote extends HttpServlet {
     protected void doGet(HttpServletRequest rq, HttpServletResponse rs) throws ServletException, IOException {
         System.out.println("SssRemote:GET");
 
-        HttpRequest request = HttpRequest.newBuilder().uri(URI.create("http://localhost:8080/lab3/Ggg?a=1&b=2")).build();;
+        HttpRequest request = HttpRequest.newBuilder().uri(URI.create("http://localhost:3000/lab3/Ggg?a=1&b=2")).build();;
         HttpClient client = HttpClient.newBuilder()
                 .version(HttpClient.Version.HTTP_1_1)
                 .followRedirects(HttpClient.Redirect.NORMAL)
