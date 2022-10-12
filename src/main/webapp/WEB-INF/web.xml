@@ -32,6 +32,15 @@
       <url-pattern>/HtmlForward</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+      <servlet-name>SssRemote</servlet-name>
+      <servlet-class>SssRemote</servlet-class>
+    </servlet>
+    <servlet-mapping>
+      <servlet-name>SssRemote</servlet-name>
+      <url-pattern>/SssRemote</url-pattern>
+    </servlet-mapping>
+
     <welcome-file-list>
       <welcome-file>index.html</welcome-file>
     </welcome-file-list>
