@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<project name="lab3" default="deploy" basedir=".">
+    <target name="init">
+        <property name="server" value="C:\Users\Anton\source\4k-1c\labs\programming_into_internet\apache-tomcat-9.0.65" />        
+        <property name="server_proj" value="${server}\webapps\lab3" />        
+        <property name="lab" value="C:\Users\Anton\source\4k-1c\labs\programming_into_internet\lab3" />
+    </target>
+
+    <target name="deploy" depends="init">
+        <delete dir="${server_proj}" />
+        <delete file="${server}\webapps\lab3.war" />        
+
+        <copy file="${lab}\target\lab3.war" todir="${server}\webapps" />
+    </target>
+</project>
