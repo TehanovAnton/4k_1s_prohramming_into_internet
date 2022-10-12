@@ -16,7 +16,6 @@ public class HtmlForward extends HttpServlet {
     protected void doGet(HttpServletRequest rq, HttpServletResponse rs) throws ServletException, IOException {
         System.out.println("HtmlForward:GET");
 
-        RequestDispatcher rd = rq.getRequestDispatcher("/forwarded.html");
-        rd.forward(rq, rs);
+        rs.sendRedirect("/lab3/forwarded.html");
     }
 }
