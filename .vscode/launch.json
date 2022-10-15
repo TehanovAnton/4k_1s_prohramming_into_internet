@@ -8,7 +8,7 @@
             "name": "Launch Chrome",
             "request": "launch",
             "type": "chrome",
-            "url": "http://localhost:8080/lab3",
+            "url": "http://localhost:8080/AS_TAV_4_5_2_11_3",
             "webRoot": "${workspaceFolder}"
         }
     ]

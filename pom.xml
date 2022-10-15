@@ -5,18 +5,18 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.mycompany.app</groupId>
-  <artifactId>lab3</artifactId>
+  <artifactId>AS_TAV_4_5_2_11_3</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>war</packaging>
 
-  <name>lab3 Maven Webapp</name>
+  <name>AS_TAV_4_5_2_11_3 Maven Webapp</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>11</maven.compiler.source>
-    <maven.compiler.target>11</maven.compiler.target>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 
   <dependencies>
@@ -43,10 +43,18 @@
         <scope>provided</scope>
     </dependency>
 
+    <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.client5/httpclient5 -->
+    <dependency>
+        <groupId>org.apache.httpcomponents.client5</groupId>
+        <artifactId>httpclient5</artifactId>
+        <version>5.1.3</version>
+    </dependency>
+
+
   </dependencies>
 
   <build>
-    <finalName>lab3</finalName>
+    <finalName>AS_TAV_4_5_2_11_3</finalName>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <plugin>
@@ -54,9 +62,9 @@
           <artifactId>tomcat7-maven-plugin</artifactId>
           <version>2.2</version>
           <configuration>
-            <url>http://localhost:8080/lab3</url>
+            <url>http://localhost:8080/AS_TAV_4_5_2_11_3</url>
             <server>TomcatServer</server>
-            <path>/lab3</path>
+            <path>/AS_TAV_4_5_2_11_3</path>
           </configuration>
         </plugin>
         <plugin>

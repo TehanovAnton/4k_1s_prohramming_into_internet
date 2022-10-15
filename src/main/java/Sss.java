@@ -21,7 +21,7 @@ public class Sss extends HttpServlet {
   protected void doGet(HttpServletRequest rq, HttpServletResponse rs) throws ServletException, IOException {
     System.out.println("Sss:GET");
 
-    rs.sendRedirect("/lab3/Ggg");
+    rs.sendRedirect("/AS_TAV_4_5_2_11_3/Ggg");
   }
 
   @Override
@@ -30,7 +30,7 @@ public class Sss extends HttpServlet {
     rq.setAttribute("a",rq.getParameter("a"));
     rq.setAttribute("b",rq.getParameter("b"));
 
-    rs.sendRedirect("/lab3/Ggg");
+    rs.sendRedirect("/AS_TAV_4_5_2_11_3/Ggg");
   }
 
   @Override
