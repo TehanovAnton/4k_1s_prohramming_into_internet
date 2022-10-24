@@ -73,6 +73,6 @@
         <hr>
 
         <a>Afternoon servlet is here: </a>
-        <jsp:forward page="afternoon.jsp"></jsp:forward>
+        <jsp:include page="/Afternoon"></jsp:include>
     </body>
 </html>
