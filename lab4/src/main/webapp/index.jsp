@@ -52,19 +52,23 @@
         </table>
 
         <% if (h > 3 && h < 7) { %>
-        <%@ include file="night.jsp" %>
+            <%@ include file="night.jsp" %>
+            <jsp:include page="night.jsp"></jsp:include>
         <% } %>
 
         <% if (h > 6 && h < 12) { %>
-        <%@ include file="morning.jsp" %>
+            <%@ include file="morning.jsp" %>
+            <jsp:include page="morning.jsp"></jsp:include>
         <% } %>
 
         <% if (h > 11 && h < 17) { %>
-        <%@ include file="afternoon.jsp" %>
+            <%@ include file="afternoon.jsp" %>
+            <jsp:include page="afternoon.jsp"></jsp:include>
         <% } %>
 
         <% if (h > 16 && h < 24) { %>
-        <%@ include file="evening.jsp" %>
+            <%@ include file="evening.jsp" %>
+            <jsp:include page="evening.jsp"></jsp:include>
         <% } %>
         <hr>
     </body>
