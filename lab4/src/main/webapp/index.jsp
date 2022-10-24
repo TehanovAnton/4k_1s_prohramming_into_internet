@@ -71,8 +71,8 @@
             <jsp:include page="evening.jsp"></jsp:include>
         <% } %>
         <hr>
-        
+
         <a>Afternoon servlet is here: </a>
-        <jsp:include page="/Afternoon"></jsp:include>
+        <jsp:forward page="afternoon.jsp"></jsp:forward>
     </body>
 </html>
