@@ -25,7 +25,7 @@
         <p>Today <%= new Date() %></p>
 
         <% 
-            int h=(new Date()).getHours();
+            int h = (new Date()).getHours();
             if (h > 3 && h < 7)
                 out.println("<h2>Good night</h2>");
             if (h > 6 && h < 12)
@@ -50,5 +50,22 @@
                 </tr>
             <% } %>
         </table>
+
+        <% if (h > 3 && h < 7) { %>
+        <%@ include file="night.jsp" %>
+        <% } %>
+
+        <% if (h > 6 && h < 12) { %>
+        <%@ include file="morning.jsp" %>
+        <% } %>
+
+        <% if (h > 11 && h < 17) { %>
+        <%@ include file="afternoon.jsp" %>
+        <% } %>
+
+        <% if (h > 16 && h < 24) { %>
+        <%@ include file="evening.jsp" %>
+        <% } %>
+        <hr>
     </body>
 </html>
