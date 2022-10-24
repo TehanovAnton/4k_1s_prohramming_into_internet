@@ -51,7 +51,7 @@
             <% } %>
         </table>
 
-        <% if (h > 3 && h < 7) { %>
+        <% if ((h > 3 && h < 7) || (h > 23 && h < 4)) { %>
             <%@ include file="night.jsp" %>
             <jsp:include page="night.jsp"></jsp:include>
         <% } %>
