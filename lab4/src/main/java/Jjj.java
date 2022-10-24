@@ -1,5 +1,7 @@
 import java.io.IOException;
+import java.util.Date;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -18,21 +20,14 @@ public class Jjj extends HttpServlet {
     protected void doGet(HttpServletRequest rq, HttpServletResponse rs) throws IOException, ServletException {
         System.out.println("Servlet:Jjj");
 
-        HttpPost httpGet = new HttpPost("http://localhost:8080/lab4/afternoon.jsp");
-        
-        CloseableHttpClient httpclient = HttpClients.createDefault();
-        try (CloseableHttpResponse response1 = httpclient.execute(httpGet)) {
-            System.out.println(response1.getCode() + " " + response1.getReasonPhrase());
-            HttpEntity entity1 = response1.getEntity();
-
-            rs.setStatus(response1.getCode());
-            String responseString = EntityUtils.toString(entity1, "UTF-8");
-            rs.getWriter().write(responseString);
-
-            EntityUtils.consume(entity1);
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
+        int h=(new Date()).getHours();
+        RequestDispatcher rd = rq.getRequestDispatcher("/");
+        if (h > 3 && h < 7) rq.getRequestDispatcher("/night.jsp");
+        if (h > 6 && h < 12) rq.getRequestDispatcher("/morning.jsp");
+        if (h > 11 && h < 17) rq.getRequestDispatcher("/afternoon.jsp");
+        if (h > 16 && h < 24) rq.getRequestDispatcher("/evening.jsp");
+        if (h > 23 || h < 4 ) rq.getRequestDispatcher("/night.jsp");
+        rd.forward(rq, rs);
     }
 
 }
