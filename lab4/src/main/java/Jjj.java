@@ -20,7 +20,7 @@ public class Jjj extends HttpServlet {
     protected void doGet(HttpServletRequest rq, HttpServletResponse rs) throws IOException, ServletException {
         System.out.println("Servlet:Jjj");
 
-        HttpGet httpGet = new HttpGet("http://localhost:8080/lab4/Afternoon");
+        HttpPost httpGet = new HttpPost("http://localhost:8080/lab4/afternoon.jsp");
         
         CloseableHttpClient httpclient = HttpClients.createDefault();
         try (CloseableHttpResponse response1 = httpclient.execute(httpGet)) {

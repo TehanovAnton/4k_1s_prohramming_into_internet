@@ -1,2 +1,2 @@
-127.0.0.1 - - [25/Oct/2022:01:06:06 +0300] "GET /lab4/Afternoon HTTP/1.1" 200 19 http-bio-8080-exec-3 6
-0:0:0:0:0:0:0:1 - - [25/Oct/2022:01:06:06 +0300] "GET /lab4/Jjj HTTP/1.1" 200 19 http-bio-8080-exec-1 944
+127.0.0.1 - - [25/Oct/2022:01:09:04 +0300] "POST /lab4/afternoon.jsp HTTP/1.1" 200 147 http-bio-8080-exec-3 519
+0:0:0:0:0:0:0:1 - - [25/Oct/2022:01:09:04 +0300] "GET /lab4/Jjj HTTP/1.1" 200 147 http-bio-8080-exec-1 1347
