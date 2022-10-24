@@ -36,6 +36,19 @@
                 out.println("<h2>Good evening</h2>");
             if (h > 23 || h < 4 )
                 out.println("<h2>Good night</h2>");
-        %>        
+        %>
+
+        <%SimpleDateFormat yy = new SimpleDateFormat("dd/MM/yyyy"); %>
+        <%SimpleDateFormat u = new SimpleDateFormat("u' ('E') '"); %>
+
+        <table>
+            <% for (int i=0; i < 7; i++) { %>
+                <% Date dateNext = new Date(new Date().getTime() + 60*60*24*1000*i); %>
+                <tr>
+                    <td><% out.print(yy.format(dateNext)); %></td>
+                    <td><% out.print(u.format(dateNext)); %></td>
+                </tr>
+            <% } %>
+        </table>
     </body>
 </html>
