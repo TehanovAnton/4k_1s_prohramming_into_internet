@@ -7,9 +7,9 @@
         </title>
     </head>
     <body>
-        <taglib:dossier action="/AS_425SII5/jspclass.Ttt">
-            <br/><taglib:surname value="Skaradumau"/>
-            <br/><taglib:lastname value="Ivan"/>
+        <taglib:dossier action="/lab5/Ttt">
+            <br/><taglib:surname value="Tehanov"/>
+            <br/><taglib:lastname value="Anton"/>
             <br><taglib:sex/>
             <br><taglib:submit/>
         </taglib:dossier>
