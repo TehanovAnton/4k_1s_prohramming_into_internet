@@ -74,8 +74,12 @@
         <servlet-name>Ccc</servlet-name>
     </filter-mapping>
 
-     <listener>
+    <listener>
         <listener-class>listeners.L1</listener-class>
+    </listener>
+
+    <listener>
+        <listener-class>listeners.L2</listener-class>
     </listener>
 
     <welcome-file-list>
