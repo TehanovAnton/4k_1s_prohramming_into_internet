@@ -52,6 +52,19 @@
         <servlet-name>Ccc</servlet-name>
     </filter-mapping>
 
+    <filter>
+        <filter-name>F2</filter-name>
+        <filter-class>filters.F2</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>F2</filter-name>
+        <url-pattern>/ccc.jsp</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>F2</filter-name>
+        <servlet-name>Ccc</servlet-name>
+    </filter-mapping>
+
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
