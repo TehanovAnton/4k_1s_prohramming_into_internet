@@ -59,9 +59,9 @@
           <artifactId>tomcat7-maven-plugin</artifactId>
           <version>2.2</version>
           <configuration>
-            <url>http://localhost:8080/lab6</url>
+            <url>http://localhost:8080/lab9</url>
             <server>TomcatServer</server>
-            <path>/lab6</path>
+            <path>/lab9</path>
           </configuration>
         </plugin>
         <plugin>

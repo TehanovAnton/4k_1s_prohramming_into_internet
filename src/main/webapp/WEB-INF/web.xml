@@ -3,17 +3,17 @@
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
-    <display-name>Lab6</display-name>
+    <display-name>Lab 9</display-name>
     
     <context-param>
         <description>url</description>
         <param-name>URL1</param-name>
-        <param-value>http://localhost:8080/lab6/task1.html</param-value>
+        <param-value>http://localhost:8080/lab9/task1.html</param-value>
     </context-param>
     <context-param>
         <description>url</description>
         <param-name>URL2</param-name>
-        <param-value>http://localhost:8080/lab6/Task1</param-value>
+        <param-value>http://localhost:8080/lab9/Task1</param-value>
     </context-param>
 
     <servlet>
@@ -42,6 +42,15 @@
         <servlet-name>Ccc</servlet-name>
         <url-pattern>/Ccc</url-pattern>
     </servlet-mapping>
+
+    <filter>
+        <filter-name>F1</filter-name>
+        <filter-class>filters.F1</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>F1</filter-name>
+        <servlet-name>Ccc</servlet-name>
+    </filter-mapping>
 
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
