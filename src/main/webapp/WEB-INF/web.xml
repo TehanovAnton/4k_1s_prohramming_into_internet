@@ -74,6 +74,10 @@
         <servlet-name>Ccc</servlet-name>
     </filter-mapping>
 
+     <listener>
+        <listener-class>listeners.L1</listener-class>
+    </listener>
+
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
