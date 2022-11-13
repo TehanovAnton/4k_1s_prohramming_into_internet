@@ -11,3 +11,7 @@
 0:0:0:0:0:0:0:1 - - [13/Nov/2022:21:51:53 +0300] "GET /lab10/SelectServlet HTTP/1.1" 500 1524 http-bio-8080-exec-1 115
 0:0:0:0:0:0:0:1 - - [13/Nov/2022:21:52:36 +0300] "GET /lab10/SelectServlet?param1=1&param2=4 HTTP/1.1" 200 20 http-bio-8080-exec-2 883
 0:0:0:0:0:0:0:1 - - [13/Nov/2022:21:52:56 +0300] "GET /lab10/SelectServlet?param1=1&param2=5 HTTP/1.1" 200 30 http-bio-8080-exec-4 34
+0:0:0:0:0:0:0:1 - - [13/Nov/2022:22:54:38 +0300] "GET /lab10/StoredProcedireServlet?param1=1 HTTP/1.1" 500 3194 http-bio-8080-exec-1 41
+0:0:0:0:0:0:0:1 - - [13/Nov/2022:22:55:26 +0300] "GET /lab10/StoredProcedireServlet?param1=1 HTTP/1.1" 404 1007 http-bio-8080-exec-1 31
+0:0:0:0:0:0:0:1 - - [13/Nov/2022:22:55:44 +0300] "GET /lab10/StoredProcedureServlet?param1=1 HTTP/1.1" 200 - http-bio-8080-exec-3 819
+0:0:0:0:0:0:0:1 - - [13/Nov/2022:23:02:10 +0300] "GET /lab10/StoredProcedureServlet?param1=4 HTTP/1.1" 200 18 http-bio-8080-exec-1 771

@@ -3,9 +3,9 @@
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
-  <display-name>lab10</display-name>
+    <display-name>lab10</display-name>
 
-  <servlet>
+    <servlet>
         <servlet-name>SelectServlet</servlet-name>
         <servlet-class>SelectServlet</servlet-class>
     </servlet>
@@ -14,4 +14,12 @@
         <url-pattern>/SelectServlet</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>StoredProcedureServlet</servlet-name>
+        <servlet-class>StoredProcedureServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StoredProcedureServlet</servlet-name>
+        <url-pattern>/StoredProcedureServlet</url-pattern>
+    </servlet-mapping>
 </web-app>
