@@ -1,0 +1,38 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+    <display-name>lab11</display-name>
+
+    <servlet>
+        <servlet-name>SssHeader</servlet-name>
+        <servlet-class>servlets.SssHeader</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SssHeader</servlet-name>
+        <url-pattern>/SssHeader</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SssXml</servlet-name>
+        <servlet-class>servlets.SssXml</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SssXml</servlet-name>
+        <url-pattern>/SssXml</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SssJson</servlet-name>
+        <servlet-class>servlets.SssJson</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SssJson</servlet-name>
+        <url-pattern>/SssJson</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+</web-app>
