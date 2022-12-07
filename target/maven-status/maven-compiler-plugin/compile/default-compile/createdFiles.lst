@@ -1,3 +1,4 @@
 servlets\Sss.class
 models\Find$FileFilter.class
+servlets\FileUploadDemo.class
 models\Find.class

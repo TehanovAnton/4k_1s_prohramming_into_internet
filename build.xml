@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<project name="AS_TAV_4_5_2_11_3" default="deploy" basedir=".">
+    <target name="init">
+        <property name="server" value="C:\Users\Anton\source\4k-1c\labs\programming_into_internet\apache-tomcat-9.0.65" />        
+        <property name="server_proj" value="${server}\webapps\lab13" />        
+        <property name="lab" value="C:\Users\Anton\source\4k-1c\labs\programming_into_internet\lab13\solution" />
+    </target>
+
+    <target name="deploy" depends="init">
+        <delete dir="${server_proj}" />
+        <delete file="${server}\webapps\lab13.war" />        
+
+        <copy file="${lab}\target\lab13.war" todir="${server}\webapps" />
+    </target>
+</project>

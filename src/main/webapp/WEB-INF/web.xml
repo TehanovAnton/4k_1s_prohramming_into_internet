@@ -12,7 +12,7 @@
 
     <servlet>
         <servlet-name>Sss</servlet-name>
-        <servlet-class>servlets.Sss</servlet-class>
+        <servlet-class>servlets.FileUploadDemo</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>Sss</servlet-name>

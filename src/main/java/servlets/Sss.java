@@ -38,8 +38,11 @@ public class Sss extends HttpServlet {
                       .append("</a>");
             }
             resp.getWriter().println(result);
+
+            System.out.println("One");
         } 
         else {
+            System.out.println("TWO");
             System.out.println(filename);
             try {
                 File doc = new File(docdir.concat("/").concat(filename));

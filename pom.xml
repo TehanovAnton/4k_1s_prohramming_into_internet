@@ -35,6 +35,14 @@
         <scope>provided</scope>
     </dependency>
 
+       <!-- https://mvnrepository.com/artifact/commons-fileupload/commons-fileupload -->
+<dependency>
+    <groupId>commons-fileupload</groupId>
+    <artifactId>commons-fileupload</artifactId>
+    <version>1.4</version>
+</dependency>
+
+
     <!-- https://mvnrepository.com/artifact/javax.servlet.jsp/jsp-api -->
     <dependency>
         <groupId>javax.servlet.jsp</groupId>
@@ -45,7 +53,7 @@
   </dependencies>
 
   <build>
-    <finalName>solution</finalName>
+    <finalName>lab13</finalName>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <plugin>

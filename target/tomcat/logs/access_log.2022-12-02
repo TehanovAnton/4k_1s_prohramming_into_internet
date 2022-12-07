@@ -1,6 +1,0 @@
-0:0:0:0:0:0:0:1 - - [02/Dec/2022:10:31:44 +0300] "GET /lab13/ HTTP/1.1" 200 124 http-bio-8080-exec-1 1380
-0:0:0:0:0:0:0:1 - - [02/Dec/2022:10:31:46 +0300] "GET /lab13/Sss HTTP/1.1" 200 58 http-bio-8080-exec-3 24
-0:0:0:0:0:0:0:1 - - [02/Dec/2022:10:33:55 +0300] "GET /lab13/files?file=file1.doc HTTP/1.1" 404 973 http-bio-8080-exec-5 7
-0:0:0:0:0:0:0:1 - - [02/Dec/2022:10:34:32 +0300] "GET /lab13/files?file=file1.doc HTTP/1.1" 404 973 http-bio-8080-exec-7 6
-0:0:0:0:0:0:0:1 - - [02/Dec/2022:10:35:34 +0300] "GET /lab13/Sss HTTP/1.1" 200 56 http-bio-8080-exec-1 149
-0:0:0:0:0:0:0:1 - - [02/Dec/2022:10:35:37 +0300] "GET /lab13/Sss?file=file1.doc HTTP/1.1" 200 6 http-bio-8080-exec-3 7
